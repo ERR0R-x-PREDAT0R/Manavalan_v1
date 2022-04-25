@@ -127,7 +127,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase,Admins will Add it soon Bro🤠')
+            k = await query.message.edit('This Movie Not Found In DataBase,Admin will Add it soon Bro🤠')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -389,7 +389,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
             buttons = [
         [
-             InlineKeyboardButton('🛡 Join Group 🛡', url='t.me/MOVIESTALKIES23') 
+             InlineKeyboardButton('🛡 Join Group 🛡', url='t.me/MOVIE_HUB_TG') 
         ]
         ]
             reply_markup=InlineKeyboardMarkup(buttons)
@@ -404,10 +404,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url='http://t.me/dqautofl_bot?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url='http://t.me/Manavalan_v1Bot?startgroup=true')
             ],[
             InlineKeyboardButton('sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/mnow_updates')
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/movies_hub_tg1')
             ],[
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
